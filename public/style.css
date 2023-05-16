@@ -1,0 +1,116 @@
+body {
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.selections--page {
+    background-color: black;
+    min-height: 850px;
+}
+.card--product--wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, calc(20% - 30px));
+    grid-gap: 40px;
+    height: auto;
+}
+.love--wrapper {
+    width: 32px;
+    height: 32px;
+    background: #30333a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 50px;
+    border: 1px solid #de33fe;
+    cursor: pointer;
+}
+.love--wrapper .love {
+    fill: #001f71;
+}
+.bin--wrapper {
+    width: 32px;
+    height: 32px;
+    background: #30333a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 50px;
+    border: 1px solid #de33fe;
+    cursor: pointer;
+}
+.bin--wrapper .bin {
+    fill: #001f71;
+}
+.card--product .card--content {
+    position: relative;
+}
+.card--product .love--wrapper {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    background: #30333a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 50px;
+    border: 1px solid #de33fe;
+}
+.love--wrapper .love--active  {
+    fill: #de33fe;
+}
+.card--product .bin--wrapper {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: 32px;
+    height: 32px;
+    background: #30333a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 50px;
+    border: 1px solid #de33fe;
+}
+.card--product {
+    background: #04133c;
+    border: 1px solid #002685;
+    box-shadow: 3px 3px 6px rgba(222, 51, 254, 0.2), -3px -3px 6px rgba(22, 184, 195, 0.2);
+    border-radius: 20px;
+}
+.card--product .card--image {
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.card--product .card--title {
+    color: #fff;
+}
+.main--image--card--product {
+    height: auto;
+}
+.card--content {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card--image {
+    width: 100% !important;
+    height: 180px !important;
+    border-radius: 10px;
+    background-color: #001f71;
+}
