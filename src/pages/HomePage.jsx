@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {error, getItemSelector, loader} from "../redux/reducer/itemSelector";
 import {loadItem} from "../redux/reducer/itemReducer";
@@ -19,7 +19,7 @@ const HomePage = () => {
         dispatch(loadItem())
 
 
-    }, [])
+    }, [dispatch])
 
     const toggleLike = (e) => {
         if(e.target.classList.contains('love--active')){
